@@ -43,7 +43,7 @@ def most_busy_users(df):
 # Function to create a word cloud for the selected user's messages
 def create_wordcloud(selected_user, df):
     # Load a custom list of stop words
-    f = open('D:\project\WHATSAPP-CHAT-ANALYSIS\pythonProject\stop_hinglish.txt', 'r')
+    f = open('stop_hinglish.txt', 'r')
     stop_words = f.read()
 
     # Filter data for the selected user, if not "Overall"
@@ -68,7 +68,7 @@ def create_wordcloud(selected_user, df):
 # Function to find the most common words used
 def most_common_words(selected_user, df):
     # Load the stop words list
-    f = open('D:\project\WHATSAPP-CHAT-ANALYSIS\pythonProject\stop_hinglish.txt', 'r')
+    f = open('stop_hinglish.txt', 'r')
     stop_words = f.read()
 
     # Filter data for the selected user, if not "Overall"
