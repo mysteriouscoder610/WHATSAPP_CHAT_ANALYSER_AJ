@@ -195,12 +195,12 @@ if uploaded_file is not None:
                 st.dataframe(emoji_df)
             with col2:
                 # Fix the line below based on actual column names
-            if not emoji_df.empty:
-                fig, ax = plt.subplots()
-                ax.pie(emoji_df.iloc[:, 1].head(), labels=emoji_df.iloc[:, 0].head(), autopct="%0.2f")
-                st.pyplot(fig)
-            else:
-                st.write("No emoji data to display")
+                if not emoji_df.empty:
+                    fig, ax = plt.subplots()
+                    ax.pie(emoji_df.iloc[:, 1].head(), labels=emoji_df.iloc[:, 0].head(), autopct="%0.2f")
+                    st.pyplot(fig)
+                else:
+                    st.write("No emoji data to display")
 
         # 🔹 Tab 7: Most Common Words
         with tab7:
