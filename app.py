@@ -188,14 +188,19 @@ if uploaded_file is not None:
         # 🔹 Tab 6: Emoji Analysis
         with tab6:
             emoji_df = helper.emoji_helper(selected_user, df)
-            st.markdown("<h2 class='slide-in'>EMOJI ANALYSIS</h2>", unsafe_allow_html=True)
+            st.write("Emoji DataFrame columns:", emoji_df.columns.tolist())  # Debug line
+            st.markdown("<h2 class='fade-in'>EMOJI ANALYSIS</h2>", unsafe_allow_html=True)
             col1, col2 = st.columns(2)
             with col1:
                 st.dataframe(emoji_df)
             with col2:
-                fig, ax = plt.subplots()
-                ax.pie(emoji_df[1].head(), labels=emoji_df[0].head(), autopct="%0.2f")
-                st.pyplot(fig)
+                # Fix the line below based on actual column names
+            if not emoji_df.empty:
+            fig, ax = plt.subplots()
+            ax.pie(emoji_df.iloc[:, 1].head(), labels=emoji_df.iloc[:, 0].head(), autopct="%0.2f")
+            st.pyplot(fig)
+            else:
+            st.write("No emoji data to display")
 
         # 🔹 Tab 7: Most Common Words
         with tab7:
