@@ -147,7 +147,7 @@ The analyzer supports **Hinglish** (Hindi + English) text analysis with:
 ## 📸 Screenshots
 
 <!-- Add your screenshot here -->
-![WhatsApp Chat Analyzer Interface](path/to/your/screenshot.png)
+![WhatsApp Chat Analyzer Interface](frontend_image)
 
 *Screenshot showing the main interface with animated statistics cards and timeline analysis*
 
