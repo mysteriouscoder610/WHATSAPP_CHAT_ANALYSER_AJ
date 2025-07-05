@@ -2,6 +2,8 @@
 
 A comprehensive and visually stunning web application built with Streamlit that analyzes WhatsApp chat exports to provide detailed insights into messaging patterns, user behavior, and conversation dynamics.
 
+## Live Demo: [https://whatsappchatanalyseraj.streamlit.app/]
+
 ## 🎯 Project Overview
 
 The WhatsApp Chat Analyzer is designed to transform your exported WhatsApp chat data into meaningful visualizations and statistics. With an elegant animated interface and comprehensive analytics, this tool helps you understand communication patterns, identify trends, and gain insights from your chat history.
