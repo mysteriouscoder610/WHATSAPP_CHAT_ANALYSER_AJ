@@ -2,7 +2,7 @@
 
 A comprehensive and visually stunning web application built with Streamlit that analyzes WhatsApp chat exports to provide detailed insights into messaging patterns, user behavior, and conversation dynamics.
 
-## Live Demo: [https://whatsappchatanalyseraj.streamlit.app/]
+## Live Demo: https://whatsappchatanalyseraj.streamlit.app/
 
 ## 🎯 Project Overview
 
